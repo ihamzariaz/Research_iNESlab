@@ -2,7 +2,8 @@
 This repository contains my contributions in my lab, which has essential and important projects to take a good start in deep world.
 # 1.1) DarkNet Implimentation on our own dataset on gpu.
 # Setp 1: Comfirmation
-First install DarkNet from the offical website https://pjreddie.com/darknet/install/
+First install DarkNet from the offical website https://pjreddie.com/darknet/install/ .
+
 Before this step you have to make sure that your system must have navidia gpu support and opencv running in it for better results.
 Install darket in your ubuntu machine server with modification in makefile such as
 
@@ -50,17 +51,17 @@ The resulting txt files have the full path of data with respect to darknet.
 Please place train.txt, test.txt, obj.data, obj.names, dataset,and labels in data directory of darket.
 Before this please make sure that our images and crosspounding labels must be in same directory.
 # Step 7: Download the weights of pretrained model
-Please download darknet19_448.conv.23 file and place in darkent's directory.
+Please download darknet19_448.conv.23 file and place in darkNet's directory.
 https://github.com/KleinYuan/easy-yolo/blob/master/darknet19_448.conv.23
 # Step 8: Open your terminal and start training and testing the models
-To Start Training:
+1) To Start Training:
 
 ./darknet detector train cfg/obj.data cfg/yolo-obj.cfg darknet19_448.conv.23
 
-To testing
+2) To testing
 
 ./darknet detector test cfg/obj.data cfg/yolo-obj.cfg yolo-obj.weights
 
-To apply our model to validates on videos
+3) To apply our model to validates on videos
 
 ./darknet detector demo data/obj.data cfg/yolo-obj.cfg yolo-obj.weights video_name.file_format -i 0
