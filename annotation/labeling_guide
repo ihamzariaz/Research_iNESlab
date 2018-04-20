@@ -1,0 +1,17 @@
+Instruction:
+1) Run the main program in any directory.
+
+2) After running we have a gui window, in the below of that window we have a option to load your directory which is containing the our images just select and load the images.
+
+3) Lets look up on the top right side of this pop-up window we have classes option first select your class number then start labeling.
+
+4) When labeling is done then, again look up below side under the loading options we also have taps for saving the labels and then go for the next image.
+
+5) When we go on the next image then a directory containing our lables is created in the same directory in which we have our images.
+
+6) And this tool is also created a text file name train.txt which contain address of images.
+
+7) This code is copied from internet but we can edit it according to our applications. 
+
+8) Converting to TensorFlow format
+   After labelling the images, the labels can be read and converted to TFRecord using Python scripts available in Tensorflow, using tf.train.Example and tf.train.Features. Note: Yolo and TF share the same bounding box notations (normalised).
